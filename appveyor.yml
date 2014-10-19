@@ -1,6 +1,9 @@
 version: "{build}"
 
 install:
+  - SET PATH=C:\Ruby%ruby_version%\bin;%PATH%
+  - ruby --version
+
   - gem install bundler --no-document --no-ri --no-rdoc
   - bundle install --jobs 4
 
